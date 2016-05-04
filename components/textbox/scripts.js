@@ -9,6 +9,6 @@ Polymer({
         this.validate();
     },
     validate: function(){
-        this.displayError = !this.value || this.value === '';
+        this.displayError = !this.value || this.value.trim() === '';
     }
 });
