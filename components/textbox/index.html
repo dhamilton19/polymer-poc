@@ -1,0 +1,12 @@
+<dom-module id="es-textbox">
+
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+    <template>
+        <input value='{{value::input}}' type='text' on-blur='_onBlur'/>
+        <es-error-message message='{{error-message}}' hidden="{{!displayError}}"/>
+    </template>
+
+</dom-module>
+
+<script src='./scripts.js'></script>
